@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Landing Page</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .buah {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("https://www.riauonline.co.id/foto/bank/images2/buah-sawit2.jpg");
+
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 150px 20px;
+    }
+
+    .buah h1 {
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    .buah p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .unggulan {
+      transition: 0.3s;
+    }
+
+    .unggulan:hover {
+      transform: translateY(-10px);
+    }
+
+    .unggulan{
+    height:260px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-weight:bold;
+    font-size:22px;
+    border-radius:10px;
+    overflow:hidden;
+    }
+
+  .sawit{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images-tm.tempo.co/all/2023/12/13/849168/849168_1200.jpg");
+    }
+
+  .margarin{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://cf.shopee.co.id/file/e8451b063fad5e1bf9441c462aa8490a");
+    }
+
+  .biodiesel{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://media.istockphoto.com/id/491333822/id/foto/biodiesel-biofuel-kelapa-sawit-dengan-tabung-uji-pada-latar-belakang-putih.jpg?s=1024x1024&w=is&k=20&c=uQPVWnQK75bzoSiO0WzT8ILoLRlm_XmRwFwfU7jx1s4=");
+    }
+
+  .sawit, .margarin, .biodiesel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    }
+
+    footer {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+      <a class="navbar-brand" href="#">MyWebsite</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#produk">produk</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Kontak</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <section class="buah text-center">
+    <div class="container">
+
+      <h1>Selamat Datang</h1>
+      <p>Website Penyedia Produk Unggulan Kelapa Sawit</p>
+      <a href="#" class="btn btn-primary btn-lg">
+        Mulai 
+      </a>
+
+    </div>
+  </section>
+
+  <section id="produk" class="py-5">
+    <div class="container text-center">
+
+      <h2 class="mb-5">Produk Unggulan Kelapa Sawit</h2>
+
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="unggulan sawit shadow">
+            <div class="unggulan-body">
+              <h4>Minyak Sawit</h4>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-md-4">
+          <div class="unggulan margarin shadow">
+            <div class="unggulan-body">
+              <h4>Margarin</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="unggulan biodiesel shadow">
+            <div class="unggulan-body">
+              <h4>Biodiesel</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" class="bg-light py-5">
+    <div class="container text-center">
+
+      <h2>Hubungi Kami</h2>
+      <p>Email : MyWebsite@email.com</p>
+      <p>Instagram : @MyWebsite</p>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center p-3">
+
+    <p>© 2026 MyWebsite</p>
+  </footer>
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

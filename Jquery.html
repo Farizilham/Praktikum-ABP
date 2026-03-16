@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Efek Hide Show jQuery</title>
+
+<!-- Import jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#f2f2f2;
+text-align:center;
+margin-top:60px;
+}
+
+h1{
+color:#333;
+}
+
+.box{
+width:350px;
+margin:auto;
+padding:20px;
+background:green;
+color:white;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+button{
+padding:10px 20px;
+margin:10px;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+.hide{
+background:#e74c3c;
+color:white;
+}
+
+.show{
+background:#3498db;
+color:white;
+}
+
+button:hover{
+opacity:0.8;
+}
+
+</style>
+
+<script>
+
+$(document).ready(function(){
+
+// tombol hide
+$("#btnHide").click(function(){
+$("#kotak").hide(800);
+});
+
+// tombol show
+$("#btnShow").click(function(){
+$("#kotak").show(800);
+});
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Demo Hide & Show jQuery</h1>
+
+<div id="kotak" class="box">
+<h3>Panel Informasi</h3>
+<p>
+Kotak ini dapat disembunyikan dan ditampilkan kembali dengan tombol.
+</p>
+</div>
+
+<br>
+
+<button id="btnHide" class="hide">Hide</button>
+<button id="btnShow" class="show">Show</button>
+
+</body>
+</html>
