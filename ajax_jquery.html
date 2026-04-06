@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+  <h2>The jQuery AJAX</h2>
+  <p id="demo">Let AJAX change this text.</p>
+  <button type="button" id="changeBtn">Change Content</button>
+
+  <script>
+    $(document).ready(function () {
+      $("#changeBtn").click(function () {
+        $.ajax({
+          // URL yang akan diakses
+          url: "ajax_info.txt",
+
+          // Metode HTTP yang digunakan (POST/GET)
+          type: "GET",
+
+          // Data yang dikirim ke server
+          data: {
+            id: 123,
+            name: "John"
+          },
+
+          // Tipe data yang diharapkan dari server
+          dataType: "html",
+
+          // Waktu timeout dalam milidetik (5 detik)
+          timeout: 5000,
+
+          // Callback ketika request berhasil
+          success: function (result) {
+            $("#demo").html(result);
+          },
+
+          // Callback ketika request gagal
+          error: function (xhr, status, error) {
+            $("#demo").html("Error: " + error);
+          },
+
+          // Callback yang selalu dijalankan setelah request selesai
+          complete: function (xhr, status) {
+            console.log("Request completed with status: " + status);
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
